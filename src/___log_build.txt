@@ -1,0 +1,374 @@
+g++ -otests/performance/client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/performance/client.cpp
+g++ -otests/performance/client.exe -g -O2 -mthreads tests/performance/client.o -lws2_32 -lmswsock
+g++ -otests/performance/server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/performance/server.cpp
+g++ -otests/performance/server.exe -g -O2 -mthreads tests/performance/server.o -lws2_32 -lmswsock
+g++ -otests/unit/unit_test.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/unit_test.cpp
+g++ -otests/unit/basic_datagram_socket.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/basic_datagram_socket.cpp
+g++ -otests/unit/basic_datagram_socket.exe -g -O2 -mthreads tests/unit/basic_datagram_socket.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/basic_deadline_timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/basic_deadline_timer.cpp
+g++ -otests/unit/basic_deadline_timer.exe -g -O2 -mthreads tests/unit/basic_deadline_timer.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/basic_raw_socket.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/basic_raw_socket.cpp
+g++ -otests/unit/basic_raw_socket.exe -g -O2 -mthreads tests/unit/basic_raw_socket.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/basic_seq_packet_socket.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/basic_seq_packet_socket.cpp
+g++ -otests/unit/basic_seq_packet_socket.exe -g -O2 -mthreads tests/unit/basic_seq_packet_socket.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/basic_serial_port.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/basic_serial_port.cpp
+g++ -otests/unit/basic_serial_port.exe -g -O2 -mthreads tests/unit/basic_serial_port.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/basic_signal_set.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/basic_signal_set.cpp
+g++ -otests/unit/basic_signal_set.exe -g -O2 -mthreads tests/unit/basic_signal_set.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/basic_socket_acceptor.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/basic_socket_acceptor.cpp
+g++ -otests/unit/basic_socket_acceptor.exe -g -O2 -mthreads tests/unit/basic_socket_acceptor.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/basic_stream_socket.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/basic_stream_socket.cpp
+g++ -otests/unit/basic_stream_socket.exe -g -O2 -mthreads tests/unit/basic_stream_socket.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/basic_streambuf.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/basic_streambuf.cpp
+g++ -otests/unit/basic_streambuf.exe -g -O2 -mthreads tests/unit/basic_streambuf.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/basic_waitable_timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/basic_waitable_timer.cpp
+g++ -otests/unit/basic_waitable_timer.exe -g -O2 -mthreads tests/unit/basic_waitable_timer.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/buffered_read_stream.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/buffered_read_stream.cpp
+g++ -otests/unit/buffered_read_stream.exe -g -O2 -mthreads tests/unit/buffered_read_stream.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/buffered_stream.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/buffered_stream.cpp
+g++ -otests/unit/buffered_stream.exe -g -O2 -mthreads tests/unit/buffered_stream.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/buffered_write_stream.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/buffered_write_stream.cpp
+g++ -otests/unit/buffered_write_stream.exe -g -O2 -mthreads tests/unit/buffered_write_stream.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/buffer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/buffer.cpp
+g++ -otests/unit/buffer.exe -g -O2 -mthreads tests/unit/buffer.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/buffers_iterator.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/buffers_iterator.cpp
+g++ -otests/unit/buffers_iterator.exe -g -O2 -mthreads tests/unit/buffers_iterator.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/completion_condition.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/completion_condition.cpp
+g++ -otests/unit/completion_condition.exe -g -O2 -mthreads tests/unit/completion_condition.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/connect.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/connect.cpp
+g++ -otests/unit/connect.exe -g -O2 -mthreads tests/unit/connect.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/coroutine.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/coroutine.cpp
+g++ -otests/unit/coroutine.exe -g -O2 -mthreads tests/unit/coroutine.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/datagram_socket_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/datagram_socket_service.cpp
+g++ -otests/unit/datagram_socket_service.exe -g -O2 -mthreads tests/unit/datagram_socket_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/deadline_timer_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/deadline_timer_service.cpp
+g++ -otests/unit/deadline_timer_service.exe -g -O2 -mthreads tests/unit/deadline_timer_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/deadline_timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/deadline_timer.cpp
+g++ -otests/unit/deadline_timer.exe -g -O2 -mthreads tests/unit/deadline_timer.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/error.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/error.cpp
+g++ -otests/unit/error.exe -g -O2 -mthreads tests/unit/error.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/generic/basic_endpoint.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/generic/basic_endpoint.cpp
+g++ -otests/unit/generic/basic_endpoint.exe -g -O2 -mthreads tests/unit/generic/basic_endpoint.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/generic/datagram_protocol.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/generic/datagram_protocol.cpp
+tests/unit/generic/datagram_protocol.cpp: In function 'void generic_datagram_protocol_socket_compile::test()':
+tests/unit/generic/datagram_protocol.cpp:153:18: warning: variable 'endpoint1' set but not used [-Wunused-but-set-variable]
+     dp::endpoint endpoint1 = socket1.local_endpoint();
+                  ^~~~~~~~~
+tests/unit/generic/datagram_protocol.cpp:154:18: warning: variable 'endpoint2' set but not used [-Wunused-but-set-variable]
+     dp::endpoint endpoint2 = socket1.local_endpoint(ec);
+                  ^~~~~~~~~
+tests/unit/generic/datagram_protocol.cpp:156:18: warning: variable 'endpoint3' set but not used [-Wunused-but-set-variable]
+     dp::endpoint endpoint3 = socket1.remote_endpoint();
+                  ^~~~~~~~~
+tests/unit/generic/datagram_protocol.cpp:157:18: warning: variable 'endpoint4' set but not used [-Wunused-but-set-variable]
+     dp::endpoint endpoint4 = socket1.remote_endpoint(ec);
+                  ^~~~~~~~~
+g++ -otests/unit/generic/datagram_protocol.exe -g -O2 -mthreads tests/unit/generic/datagram_protocol.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/generic/raw_protocol.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/generic/raw_protocol.cpp
+tests/unit/generic/raw_protocol.cpp: In function 'void generic_raw_protocol_socket_compile::test()':
+tests/unit/generic/raw_protocol.cpp:153:18: warning: variable 'endpoint1' set but not used [-Wunused-but-set-variable]
+     rp::endpoint endpoint1 = socket1.local_endpoint();
+                  ^~~~~~~~~
+tests/unit/generic/raw_protocol.cpp:154:18: warning: variable 'endpoint2' set but not used [-Wunused-but-set-variable]
+     rp::endpoint endpoint2 = socket1.local_endpoint(ec);
+                  ^~~~~~~~~
+tests/unit/generic/raw_protocol.cpp:156:18: warning: variable 'endpoint3' set but not used [-Wunused-but-set-variable]
+     rp::endpoint endpoint3 = socket1.remote_endpoint();
+                  ^~~~~~~~~
+tests/unit/generic/raw_protocol.cpp:157:18: warning: variable 'endpoint4' set but not used [-Wunused-but-set-variable]
+     rp::endpoint endpoint4 = socket1.remote_endpoint(ec);
+                  ^~~~~~~~~
+g++ -otests/unit/generic/raw_protocol.exe -g -O2 -mthreads tests/unit/generic/raw_protocol.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/generic/seq_packet_protocol.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/generic/seq_packet_protocol.cpp
+tests/unit/generic/seq_packet_protocol.cpp: In function 'void generic_seq_packet_protocol_socket_compile::test()':
+tests/unit/generic/seq_packet_protocol.cpp:149:19: warning: variable 'endpoint1' set but not used [-Wunused-but-set-variable]
+     spp::endpoint endpoint1 = socket1.local_endpoint();
+                   ^~~~~~~~~
+tests/unit/generic/seq_packet_protocol.cpp:150:19: warning: variable 'endpoint2' set but not used [-Wunused-but-set-variable]
+     spp::endpoint endpoint2 = socket1.local_endpoint(ec);
+                   ^~~~~~~~~
+tests/unit/generic/seq_packet_protocol.cpp:152:19: warning: variable 'endpoint3' set but not used [-Wunused-but-set-variable]
+     spp::endpoint endpoint3 = socket1.remote_endpoint();
+                   ^~~~~~~~~
+tests/unit/generic/seq_packet_protocol.cpp:153:19: warning: variable 'endpoint4' set but not used [-Wunused-but-set-variable]
+     spp::endpoint endpoint4 = socket1.remote_endpoint(ec);
+                   ^~~~~~~~~
+g++ -otests/unit/generic/seq_packet_protocol.exe -g -O2 -mthreads tests/unit/generic/seq_packet_protocol.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/generic/stream_protocol.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/generic/stream_protocol.cpp
+tests/unit/generic/stream_protocol.cpp: In function 'void generic_stream_protocol_socket_compile::test()':
+tests/unit/generic/stream_protocol.cpp:169:18: warning: variable 'endpoint1' set but not used [-Wunused-but-set-variable]
+     sp::endpoint endpoint1 = socket1.local_endpoint();
+                  ^~~~~~~~~
+tests/unit/generic/stream_protocol.cpp:170:18: warning: variable 'endpoint2' set but not used [-Wunused-but-set-variable]
+     sp::endpoint endpoint2 = socket1.local_endpoint(ec);
+                  ^~~~~~~~~
+tests/unit/generic/stream_protocol.cpp:172:18: warning: variable 'endpoint3' set but not used [-Wunused-but-set-variable]
+     sp::endpoint endpoint3 = socket1.remote_endpoint();
+                  ^~~~~~~~~
+tests/unit/generic/stream_protocol.cpp:173:18: warning: variable 'endpoint4' set but not used [-Wunused-but-set-variable]
+     sp::endpoint endpoint4 = socket1.remote_endpoint(ec);
+                  ^~~~~~~~~
+g++ -otests/unit/generic/stream_protocol.exe -g -O2 -mthreads tests/unit/generic/stream_protocol.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/high_resolution_timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/high_resolution_timer.cpp
+g++ -otests/unit/high_resolution_timer.exe -g -O2 -mthreads tests/unit/high_resolution_timer.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/io_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/io_service.cpp
+g++ -otests/unit/io_service.exe -g -O2 -mthreads tests/unit/io_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/address.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/address.cpp
+g++ -otests/unit/ip/address.exe -g -O2 -mthreads tests/unit/ip/address.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/address_v4.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/address_v4.cpp
+g++ -otests/unit/ip/address_v4.exe -g -O2 -mthreads tests/unit/ip/address_v4.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/address_v6.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/address_v6.cpp
+g++ -otests/unit/ip/address_v6.exe -g -O2 -mthreads tests/unit/ip/address_v6.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/basic_endpoint.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/basic_endpoint.cpp
+g++ -otests/unit/ip/basic_endpoint.exe -g -O2 -mthreads tests/unit/ip/basic_endpoint.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/basic_resolver.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/basic_resolver.cpp
+g++ -otests/unit/ip/basic_resolver.exe -g -O2 -mthreads tests/unit/ip/basic_resolver.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/basic_resolver_entry.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/basic_resolver_entry.cpp
+g++ -otests/unit/ip/basic_resolver_entry.exe -g -O2 -mthreads tests/unit/ip/basic_resolver_entry.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/basic_resolver_iterator.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/basic_resolver_iterator.cpp
+g++ -otests/unit/ip/basic_resolver_iterator.exe -g -O2 -mthreads tests/unit/ip/basic_resolver_iterator.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/basic_resolver_query.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/basic_resolver_query.cpp
+g++ -otests/unit/ip/basic_resolver_query.exe -g -O2 -mthreads tests/unit/ip/basic_resolver_query.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/host_name.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/host_name.cpp
+g++ -otests/unit/ip/host_name.exe -g -O2 -mthreads tests/unit/ip/host_name.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/icmp.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/icmp.cpp
+tests/unit/ip/icmp.cpp: In function 'void ip_icmp_socket_compile::test()':
+tests/unit/ip/icmp.cpp:210:24: warning: variable 'endpoint1' set but not used [-Wunused-but-set-variable]
+     ip::icmp::endpoint endpoint1 = socket1.local_endpoint();
+                        ^~~~~~~~~
+tests/unit/ip/icmp.cpp:211:24: warning: variable 'endpoint2' set but not used [-Wunused-but-set-variable]
+     ip::icmp::endpoint endpoint2 = socket1.local_endpoint(ec);
+                        ^~~~~~~~~
+tests/unit/ip/icmp.cpp:213:24: warning: variable 'endpoint3' set but not used [-Wunused-but-set-variable]
+     ip::icmp::endpoint endpoint3 = socket1.remote_endpoint();
+                        ^~~~~~~~~
+tests/unit/ip/icmp.cpp:214:24: warning: variable 'endpoint4' set but not used [-Wunused-but-set-variable]
+     ip::icmp::endpoint endpoint4 = socket1.remote_endpoint(ec);
+                        ^~~~~~~~~
+g++ -otests/unit/ip/icmp.exe -g -O2 -mthreads tests/unit/ip/icmp.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/multicast.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/multicast.cpp
+g++ -otests/unit/ip/multicast.exe -g -O2 -mthreads tests/unit/ip/multicast.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/resolver_query_base.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/resolver_query_base.cpp
+g++ -otests/unit/ip/resolver_query_base.exe -g -O2 -mthreads tests/unit/ip/resolver_query_base.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/resolver_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/resolver_service.cpp
+g++ -otests/unit/ip/resolver_service.exe -g -O2 -mthreads tests/unit/ip/resolver_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/tcp.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/tcp.cpp
+tests/unit/ip/tcp.cpp: In function 'void ip_tcp_socket_compile::test()':
+tests/unit/ip/tcp.cpp:361:23: warning: variable 'endpoint1' set but not used [-Wunused-but-set-variable]
+     ip::tcp::endpoint endpoint1 = socket1.local_endpoint();
+                       ^~~~~~~~~
+tests/unit/ip/tcp.cpp:362:23: warning: variable 'endpoint2' set but not used [-Wunused-but-set-variable]
+     ip::tcp::endpoint endpoint2 = socket1.local_endpoint(ec);
+                       ^~~~~~~~~
+tests/unit/ip/tcp.cpp:364:23: warning: variable 'endpoint3' set but not used [-Wunused-but-set-variable]
+     ip::tcp::endpoint endpoint3 = socket1.remote_endpoint();
+                       ^~~~~~~~~
+tests/unit/ip/tcp.cpp:365:23: warning: variable 'endpoint4' set but not used [-Wunused-but-set-variable]
+     ip::tcp::endpoint endpoint4 = socket1.remote_endpoint(ec);
+                       ^~~~~~~~~
+tests/unit/ip/tcp.cpp: In function 'void ip_tcp_acceptor_compile::test()':
+tests/unit/ip/tcp.cpp:810:23: warning: variable 'endpoint1' set but not used [-Wunused-but-set-variable]
+     ip::tcp::endpoint endpoint1 = acceptor1.local_endpoint();
+                       ^~~~~~~~~
+tests/unit/ip/tcp.cpp:811:23: warning: variable 'endpoint2' set but not used [-Wunused-but-set-variable]
+     ip::tcp::endpoint endpoint2 = acceptor1.local_endpoint(ec);
+                       ^~~~~~~~~
+g++ -otests/unit/ip/tcp.exe -g -O2 -mthreads tests/unit/ip/tcp.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/udp.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/udp.cpp
+tests/unit/ip/udp.cpp: In function 'void ip_udp_socket_compile::test()':
+tests/unit/ip/udp.cpp:229:23: warning: variable 'endpoint1' set but not used [-Wunused-but-set-variable]
+     ip::udp::endpoint endpoint1 = socket1.local_endpoint();
+                       ^~~~~~~~~
+tests/unit/ip/udp.cpp:230:23: warning: variable 'endpoint2' set but not used [-Wunused-but-set-variable]
+     ip::udp::endpoint endpoint2 = socket1.local_endpoint(ec);
+                       ^~~~~~~~~
+tests/unit/ip/udp.cpp:232:23: warning: variable 'endpoint3' set but not used [-Wunused-but-set-variable]
+     ip::udp::endpoint endpoint3 = socket1.remote_endpoint();
+                       ^~~~~~~~~
+tests/unit/ip/udp.cpp:233:23: warning: variable 'endpoint4' set but not used [-Wunused-but-set-variable]
+     ip::udp::endpoint endpoint4 = socket1.remote_endpoint(ec);
+                       ^~~~~~~~~
+g++ -otests/unit/ip/udp.exe -g -O2 -mthreads tests/unit/ip/udp.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/unicast.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/unicast.cpp
+g++ -otests/unit/ip/unicast.exe -g -O2 -mthreads tests/unit/ip/unicast.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/ip/v6_only.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/ip/v6_only.cpp
+g++ -otests/unit/ip/v6_only.exe -g -O2 -mthreads tests/unit/ip/v6_only.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/is_read_buffered.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/is_read_buffered.cpp
+g++ -otests/unit/is_read_buffered.exe -g -O2 -mthreads tests/unit/is_read_buffered.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/is_write_buffered.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/is_write_buffered.cpp
+g++ -otests/unit/is_write_buffered.exe -g -O2 -mthreads tests/unit/is_write_buffered.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/placeholders.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/placeholders.cpp
+g++ -otests/unit/placeholders.exe -g -O2 -mthreads tests/unit/placeholders.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/raw_socket_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/raw_socket_service.cpp
+g++ -otests/unit/raw_socket_service.exe -g -O2 -mthreads tests/unit/raw_socket_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/read.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/read.cpp
+g++ -otests/unit/read.exe -g -O2 -mthreads tests/unit/read.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/read_at.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/read_at.cpp
+g++ -otests/unit/read_at.exe -g -O2 -mthreads tests/unit/read_at.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/read_until.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/read_until.cpp
+g++ -otests/unit/read_until.exe -g -O2 -mthreads tests/unit/read_until.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/seq_packet_socket_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/seq_packet_socket_service.cpp
+g++ -otests/unit/seq_packet_socket_service.exe -g -O2 -mthreads tests/unit/seq_packet_socket_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/serial_port.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/serial_port.cpp
+g++ -otests/unit/serial_port.exe -g -O2 -mthreads tests/unit/serial_port.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/serial_port_base.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/serial_port_base.cpp
+g++ -otests/unit/serial_port_base.exe -g -O2 -mthreads tests/unit/serial_port_base.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/serial_port_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/serial_port_service.cpp
+g++ -otests/unit/serial_port_service.exe -g -O2 -mthreads tests/unit/serial_port_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/signal_set.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/signal_set.cpp
+g++ -otests/unit/signal_set.exe -g -O2 -mthreads tests/unit/signal_set.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/signal_set_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/signal_set_service.cpp
+g++ -otests/unit/signal_set_service.exe -g -O2 -mthreads tests/unit/signal_set_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/socket_acceptor_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/socket_acceptor_service.cpp
+g++ -otests/unit/socket_acceptor_service.exe -g -O2 -mthreads tests/unit/socket_acceptor_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/socket_base.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/socket_base.cpp
+g++ -otests/unit/socket_base.exe -g -O2 -mthreads tests/unit/socket_base.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/steady_timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/steady_timer.cpp
+g++ -otests/unit/steady_timer.exe -g -O2 -mthreads tests/unit/steady_timer.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/strand.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/strand.cpp
+g++ -otests/unit/strand.exe -g -O2 -mthreads tests/unit/strand.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/stream_socket_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/stream_socket_service.cpp
+g++ -otests/unit/stream_socket_service.exe -g -O2 -mthreads tests/unit/stream_socket_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/streambuf.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/streambuf.cpp
+g++ -otests/unit/streambuf.exe -g -O2 -mthreads tests/unit/streambuf.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/system_timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/system_timer.cpp
+g++ -otests/unit/system_timer.exe -g -O2 -mthreads tests/unit/system_timer.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/thread.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/thread.cpp
+g++ -otests/unit/thread.exe -g -O2 -mthreads tests/unit/thread.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/time_traits.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/time_traits.cpp
+g++ -otests/unit/time_traits.exe -g -O2 -mthreads tests/unit/time_traits.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/waitable_timer_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/waitable_timer_service.cpp
+g++ -otests/unit/waitable_timer_service.exe -g -O2 -mthreads tests/unit/waitable_timer_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/windows/basic_handle.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/windows/basic_handle.cpp
+g++ -otests/unit/windows/basic_handle.exe -g -O2 -mthreads tests/unit/windows/basic_handle.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/windows/basic_object_handle.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/windows/basic_object_handle.cpp
+g++ -otests/unit/windows/basic_object_handle.exe -g -O2 -mthreads tests/unit/windows/basic_object_handle.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/windows/basic_random_access_handle.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/windows/basic_random_access_handle.cpp
+g++ -otests/unit/windows/basic_random_access_handle.exe -g -O2 -mthreads tests/unit/windows/basic_random_access_handle.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/windows/basic_stream_handle.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/windows/basic_stream_handle.cpp
+g++ -otests/unit/windows/basic_stream_handle.exe -g -O2 -mthreads tests/unit/windows/basic_stream_handle.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/windows/object_handle.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/windows/object_handle.cpp
+g++ -otests/unit/windows/object_handle.exe -g -O2 -mthreads tests/unit/windows/object_handle.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/windows/object_handle_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/windows/object_handle_service.cpp
+g++ -otests/unit/windows/object_handle_service.exe -g -O2 -mthreads tests/unit/windows/object_handle_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/windows/overlapped_ptr.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/windows/overlapped_ptr.cpp
+g++ -otests/unit/windows/overlapped_ptr.exe -g -O2 -mthreads tests/unit/windows/overlapped_ptr.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/windows/random_access_handle.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/windows/random_access_handle.cpp
+g++ -otests/unit/windows/random_access_handle.exe -g -O2 -mthreads tests/unit/windows/random_access_handle.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/windows/random_access_handle_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/windows/random_access_handle_service.cpp
+g++ -otests/unit/windows/random_access_handle_service.exe -g -O2 -mthreads tests/unit/windows/random_access_handle_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/windows/stream_handle.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/windows/stream_handle.cpp
+g++ -otests/unit/windows/stream_handle.exe -g -O2 -mthreads tests/unit/windows/stream_handle.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/windows/stream_handle_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/windows/stream_handle_service.cpp
+g++ -otests/unit/windows/stream_handle_service.exe -g -O2 -mthreads tests/unit/windows/stream_handle_service.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/write.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/write.cpp
+g++ -otests/unit/write.exe -g -O2 -mthreads tests/unit/write.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -otests/unit/write_at.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 tests/unit/write_at.cpp
+g++ -otests/unit/write_at.exe -g -O2 -mthreads tests/unit/write_at.o tests/unit/unit_test.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/allocation/server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/allocation/server.cpp
+g++ -oexamples/cpp03/allocation/server.exe -g -O2 -mthreads examples/cpp03/allocation/server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/buffers/reference_counted.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/buffers/reference_counted.cpp
+g++ -oexamples/cpp03/buffers/reference_counted.exe -g -O2 -mthreads examples/cpp03/buffers/reference_counted.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/chat/chat_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/chat/chat_client.cpp
+g++ -oexamples/cpp03/chat/chat_client.exe -g -O2 -mthreads examples/cpp03/chat/chat_client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/chat/chat_server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/chat/chat_server.cpp
+g++ -oexamples/cpp03/chat/chat_server.exe -g -O2 -mthreads examples/cpp03/chat/chat_server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/echo/async_tcp_echo_server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/echo/async_tcp_echo_server.cpp
+g++ -oexamples/cpp03/echo/async_tcp_echo_server.exe -g -O2 -mthreads examples/cpp03/echo/async_tcp_echo_server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/echo/async_udp_echo_server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/echo/async_udp_echo_server.cpp
+g++ -oexamples/cpp03/echo/async_udp_echo_server.exe -g -O2 -mthreads examples/cpp03/echo/async_udp_echo_server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/echo/blocking_tcp_echo_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/echo/blocking_tcp_echo_client.cpp
+g++ -oexamples/cpp03/echo/blocking_tcp_echo_client.exe -g -O2 -mthreads examples/cpp03/echo/blocking_tcp_echo_client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/echo/blocking_tcp_echo_server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/echo/blocking_tcp_echo_server.cpp
+g++ -oexamples/cpp03/echo/blocking_tcp_echo_server.exe -g -O2 -mthreads examples/cpp03/echo/blocking_tcp_echo_server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/echo/blocking_udp_echo_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/echo/blocking_udp_echo_client.cpp
+g++ -oexamples/cpp03/echo/blocking_udp_echo_client.exe -g -O2 -mthreads examples/cpp03/echo/blocking_udp_echo_client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/echo/blocking_udp_echo_server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/echo/blocking_udp_echo_server.cpp
+g++ -oexamples/cpp03/echo/blocking_udp_echo_server.exe -g -O2 -mthreads examples/cpp03/echo/blocking_udp_echo_server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/http/client/async_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/client/async_client.cpp
+g++ -oexamples/cpp03/http/client/async_client.exe -g -O2 -mthreads examples/cpp03/http/client/async_client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/http/client/sync_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/client/sync_client.cpp
+g++ -oexamples/cpp03/http/client/sync_client.exe -g -O2 -mthreads examples/cpp03/http/client/sync_client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/icmp/ping.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/icmp/ping.cpp
+g++ -oexamples/cpp03/icmp/ping.exe -g -O2 -mthreads examples/cpp03/icmp/ping.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/invocation/prioritised_handlers.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/invocation/prioritised_handlers.cpp
+g++ -oexamples/cpp03/invocation/prioritised_handlers.exe -g -O2 -mthreads examples/cpp03/invocation/prioritised_handlers.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/iostreams/daytime_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/iostreams/daytime_client.cpp
+g++ -oexamples/cpp03/iostreams/daytime_client.exe -g -O2 -mthreads examples/cpp03/iostreams/daytime_client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/iostreams/daytime_server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/iostreams/daytime_server.cpp
+g++ -oexamples/cpp03/iostreams/daytime_server.exe -g -O2 -mthreads examples/cpp03/iostreams/daytime_server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/iostreams/http_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/iostreams/http_client.cpp
+g++ -oexamples/cpp03/iostreams/http_client.exe -g -O2 -mthreads examples/cpp03/iostreams/http_client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/multicast/receiver.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/multicast/receiver.cpp
+g++ -oexamples/cpp03/multicast/receiver.exe -g -O2 -mthreads examples/cpp03/multicast/receiver.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/multicast/sender.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/multicast/sender.cpp
+g++ -oexamples/cpp03/multicast/sender.exe -g -O2 -mthreads examples/cpp03/multicast/sender.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/socks4/sync_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/socks4/sync_client.cpp
+g++ -oexamples/cpp03/socks4/sync_client.exe -g -O2 -mthreads examples/cpp03/socks4/sync_client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/timeouts/async_tcp_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/timeouts/async_tcp_client.cpp
+g++ -oexamples/cpp03/timeouts/async_tcp_client.exe -g -O2 -mthreads examples/cpp03/timeouts/async_tcp_client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/timeouts/blocking_tcp_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/timeouts/blocking_tcp_client.cpp
+g++ -oexamples/cpp03/timeouts/blocking_tcp_client.exe -g -O2 -mthreads examples/cpp03/timeouts/blocking_tcp_client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/timeouts/blocking_udp_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/timeouts/blocking_udp_client.cpp
+g++ -oexamples/cpp03/timeouts/blocking_udp_client.exe -g -O2 -mthreads examples/cpp03/timeouts/blocking_udp_client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/timeouts/server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/timeouts/server.cpp
+g++ -oexamples/cpp03/timeouts/server.exe -g -O2 -mthreads examples/cpp03/timeouts/server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/timers/tick_count_timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/timers/tick_count_timer.cpp
+g++ -oexamples/cpp03/timers/tick_count_timer.exe -g -O2 -mthreads examples/cpp03/timers/tick_count_timer.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/timers/time_t_timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/timers/time_t_timer.cpp
+g++ -oexamples/cpp03/timers/time_t_timer.exe -g -O2 -mthreads examples/cpp03/timers/time_t_timer.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/timer1/timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/timer1/timer.cpp
+g++ -oexamples/cpp03/tutorial/timer1/timer.exe -g -O2 -mthreads examples/cpp03/tutorial/timer1/timer.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/timer2/timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/timer2/timer.cpp
+g++ -oexamples/cpp03/tutorial/timer2/timer.exe -g -O2 -mthreads examples/cpp03/tutorial/timer2/timer.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/timer3/timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/timer3/timer.cpp
+g++ -oexamples/cpp03/tutorial/timer3/timer.exe -g -O2 -mthreads examples/cpp03/tutorial/timer3/timer.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/timer4/timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/timer4/timer.cpp
+g++ -oexamples/cpp03/tutorial/timer4/timer.exe -g -O2 -mthreads examples/cpp03/tutorial/timer4/timer.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/timer5/timer.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/timer5/timer.cpp
+g++ -oexamples/cpp03/tutorial/timer5/timer.exe -g -O2 -mthreads examples/cpp03/tutorial/timer5/timer.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/daytime1/client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/daytime1/client.cpp
+g++ -oexamples/cpp03/tutorial/daytime1/client.exe -g -O2 -mthreads examples/cpp03/tutorial/daytime1/client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/daytime2/server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/daytime2/server.cpp
+g++ -oexamples/cpp03/tutorial/daytime2/server.exe -g -O2 -mthreads examples/cpp03/tutorial/daytime2/server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/daytime3/server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/daytime3/server.cpp
+g++ -oexamples/cpp03/tutorial/daytime3/server.exe -g -O2 -mthreads examples/cpp03/tutorial/daytime3/server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/daytime4/client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/daytime4/client.cpp
+g++ -oexamples/cpp03/tutorial/daytime4/client.exe -g -O2 -mthreads examples/cpp03/tutorial/daytime4/client.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/daytime5/server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/daytime5/server.cpp
+g++ -oexamples/cpp03/tutorial/daytime5/server.exe -g -O2 -mthreads examples/cpp03/tutorial/daytime5/server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/daytime6/server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/daytime6/server.cpp
+g++ -oexamples/cpp03/tutorial/daytime6/server.exe -g -O2 -mthreads examples/cpp03/tutorial/daytime6/server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/tutorial/daytime7/server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/tutorial/daytime7/server.cpp
+g++ -oexamples/cpp03/tutorial/daytime7/server.exe -g -O2 -mthreads examples/cpp03/tutorial/daytime7/server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/windows/transmit_file.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/windows/transmit_file.cpp
+g++ -oexamples/cpp03/windows/transmit_file.exe -g -O2 -mthreads examples/cpp03/windows/transmit_file.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/http/server/connection.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server/connection.cpp
+g++ -oexamples/cpp03/http/server/connection_manager.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server/connection_manager.cpp
+g++ -oexamples/cpp03/http/server/main.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server/main.cpp
+g++ -oexamples/cpp03/http/server/mime_types.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server/mime_types.cpp
+g++ -oexamples/cpp03/http/server/reply.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server/reply.cpp
+g++ -oexamples/cpp03/http/server/request_handler.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server/request_handler.cpp
+g++ -oexamples/cpp03/http/server/request_parser.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server/request_parser.cpp
+g++ -oexamples/cpp03/http/server/server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server/server.cpp
+g++ -oexamples/cpp03/http/server/http_server.exe -g -O2 -mthreads examples/cpp03/http/server/connection.o examples/cpp03/http/server/connection_manager.o examples/cpp03/http/server/main.o examples/cpp03/http/server/mime_types.o examples/cpp03/http/server/reply.o examples/cpp03/http/server/request_handler.o examples/cpp03/http/server/request_parser.o examples/cpp03/http/server/server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/http/server2/connection.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server2/connection.cpp
+g++ -oexamples/cpp03/http/server2/io_service_pool.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server2/io_service_pool.cpp
+g++ -oexamples/cpp03/http/server2/main.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server2/main.cpp
+g++ -oexamples/cpp03/http/server2/mime_types.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server2/mime_types.cpp
+g++ -oexamples/cpp03/http/server2/reply.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server2/reply.cpp
+g++ -oexamples/cpp03/http/server2/request_handler.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server2/request_handler.cpp
+g++ -oexamples/cpp03/http/server2/request_parser.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server2/request_parser.cpp
+g++ -oexamples/cpp03/http/server2/server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server2/server.cpp
+g++ -oexamples/cpp03/http/server2/http_server.exe -g -O2 -mthreads examples/cpp03/http/server2/connection.o examples/cpp03/http/server2/io_service_pool.o examples/cpp03/http/server2/main.o examples/cpp03/http/server2/mime_types.o examples/cpp03/http/server2/reply.o examples/cpp03/http/server2/request_handler.o examples/cpp03/http/server2/request_parser.o examples/cpp03/http/server2/server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/http/server3/connection.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server3/connection.cpp
+g++ -oexamples/cpp03/http/server3/main.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server3/main.cpp
+g++ -oexamples/cpp03/http/server3/mime_types.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server3/mime_types.cpp
+g++ -oexamples/cpp03/http/server3/reply.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server3/reply.cpp
+g++ -oexamples/cpp03/http/server3/request_handler.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server3/request_handler.cpp
+g++ -oexamples/cpp03/http/server3/request_parser.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server3/request_parser.cpp
+g++ -oexamples/cpp03/http/server3/server.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/http/server3/server.cpp
+g++ -oexamples/cpp03/http/server3/http_server.exe -g -O2 -mthreads examples/cpp03/http/server3/connection.o examples/cpp03/http/server3/main.o examples/cpp03/http/server3/mime_types.o examples/cpp03/http/server3/reply.o examples/cpp03/http/server3/request_handler.o examples/cpp03/http/server3/request_parser.o examples/cpp03/http/server3/server.o -lws2_32 -lmswsock
+g++ -oexamples/cpp03/services/daytime_client.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/services/daytime_client.cpp
+g++ -oexamples/cpp03/services/logger_service.o -c -g -O2 -Wall -mthreads -I../include -I../../boost_1_34_1 -D_WIN32_WINNT=0x0501 examples/cpp03/services/logger_service.cpp
+g++ -oexamples/cpp03/services/daytime_client.exe -g -O2 -mthreads examples/cpp03/services/daytime_client.o examples/cpp03/services/logger_service.o -lws2_32 -lmswsock
